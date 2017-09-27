@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(serbiaForm));
             this.SuspendLayout();
             // 
             // serbiaForm
@@ -38,8 +39,9 @@
             this.BackgroundImage = global::GreetingCard.Properties.Resources.Stronk;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "serbiaForm";
-            this.Text = "Form1";
+            this.Text = "Serbia Strong";
             this.Click += new System.EventHandler(this.serbiaForm_Click);
             this.ResumeLayout(false);
 
