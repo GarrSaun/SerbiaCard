@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Threading;
+using System.IO;
 
 namespace GreetingCard
 {
@@ -28,7 +29,7 @@ namespace GreetingCard
             slavPlayer.Play();
             Thread.Sleep(3000);
 
-            //set up graphics and sound  
+            //set up pen  
             BackgroundImage = null;
             Graphics onScreen = this.CreateGraphics();
             Bitmap bm = new Bitmap(this.Width, this.Height);
@@ -43,7 +44,14 @@ namespace GreetingCard
             Font serbFont = new Font("Segoe UI", 16);
             SolidBrush textBrush = new SolidBrush(Color.Red);
 
-            
+            //Song
+            System.Windows.Media.MediaPlayer songPlayer;
+            songPlayer = new System.Windows.Media.MediaPlayer();
+            songPlayer.Open(new Uri(Application.StartupPath + "/Resources/removeMP3.mp3"));
+
+            Thread.Sleep(100);
+
+            songPlayer.Play();
 
             //Animation
             for (int x = 1; x <= 1501; x++)
