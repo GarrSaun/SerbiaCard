@@ -43,9 +43,7 @@ namespace GreetingCard
             Font serbFont = new Font("Segoe UI", 16);
             SolidBrush textBrush = new SolidBrush(Color.Red);
 
-            SoundPlayer songPlayer = new SoundPlayer(Properties.Resources.Remove);
-            Thread.Sleep(100);
-            songPlayer.Play();
+            
 
             //Animation
             for (int x = 1; x <= 1501; x++)

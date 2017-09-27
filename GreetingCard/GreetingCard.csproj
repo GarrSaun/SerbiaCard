@@ -83,9 +83,6 @@
     <None Include="Resources\Stronk.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Remove.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CheekiBreeki.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
