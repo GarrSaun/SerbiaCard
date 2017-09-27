@@ -41,7 +41,8 @@ namespace GreetingCard
             SolidBrush skinBrush = new SolidBrush(Color.NavajoWhite);
             SolidBrush accBrush = new SolidBrush(Color.Gray);
             SolidBrush eyebrush = new SolidBrush(Color.Black);
-            Font serbFont = new Font("Segoe UI", 16);
+            Font oneFont = new Font("Segoe UI", 16);
+            Font twoFont = new Font("Segoe UI", 16, FontStyle.Bold);
             SolidBrush textBrush = new SolidBrush(Color.Red);
 
             //Song
@@ -168,7 +169,7 @@ namespace GreetingCard
                 offScreen.Clear(Color.White);
 
                 //text
-                onScreen.DrawString("Serbia Strong  Remove Kebab", serbFont, textBrush, 30, 10);
+                onScreen.DrawString("Serbia Strong  Remove Kebab", oneFont, textBrush, 30, 10);
 
                 //Weirdly Positioned One (between -10 and +10)
                 Thread.Sleep(100);
@@ -283,7 +284,7 @@ namespace GreetingCard
                 offScreen.Clear(Color.White);
 
                 //text
-                onScreen.DrawString("Serbia Strong  Remove Kebab", serbFont, textBrush, 30, 10);
+                onScreen.DrawString("Serbia Strong  Remove Kebab", twoFont, textBrush, 30, 10);
 
                 //accordion+40
                 Thread.Sleep(100);
@@ -398,7 +399,7 @@ namespace GreetingCard
                 offScreen.Clear(Color.White);
 
                 //text
-                onScreen.DrawString("Serbia Strong  Remove Kebab", serbFont, textBrush, 30, 10);
+                onScreen.DrawString("Serbia Strong  Remove Kebab", oneFont, textBrush, 30, 10);
 
                 //accordion+60
                 Thread.Sleep(100);
@@ -513,7 +514,7 @@ namespace GreetingCard
                 offScreen.Clear(Color.White);
 
                 //text
-                onScreen.DrawString("Serbia Strong  Remove Kebab", serbFont, textBrush, 30, 10);
+                onScreen.DrawString("Serbia Strong  Remove Kebab", twoFont, textBrush, 30, 10);
 
                 //accordion+20
                 Thread.Sleep(100);
@@ -627,7 +628,7 @@ namespace GreetingCard
                 offScreen.Clear(Color.White);
 
                 //text
-                onScreen.DrawString("Serbia Strong  Remove Kebab", serbFont, textBrush, 30, 10);
+                onScreen.DrawString("Serbia Strong  Remove Kebab", oneFont, textBrush, 30, 10);
 
                 //accordion-20
 
